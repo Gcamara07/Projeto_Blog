@@ -1,6 +1,9 @@
 html{
  font-family: "Montserrat";
  font-size: 16px;
+ box-sizing: border-box;
+ width: 100%;
+ height: 100%;
 }
 
 body{
@@ -34,6 +37,8 @@ p{
 .container {
     display: flex;
     gap: 3rem;
+    flex-direction: row ;
+
 }
 
 #flex2{
@@ -163,8 +168,6 @@ p{
 }
 
 
-
-
 #footer{
     background-color: #02A28F;  
     height: 100%;
@@ -176,3 +179,62 @@ p{
     
 }
 
+@media only screen and (max-width: 767px){
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #head{
+        text-align:left;
+    }
+
+
+    #Post_principal{
+        width:100% ;
+        height: 23rem;
+        margin-left: -2.8rem;
+    
+    }
+
+    #titulo_posts{
+        width:38.3rem;
+        margin-left: .3rem;
+        text-align: center;
+    }
+
+    
+    .titulos{
+        width:38.3rem;
+        margin-left: .3rem;
+        text-align: center;
+    }
+
+    #lista_categorias{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .Posts_pops{
+        width: 100%;
+    }
+    
+
+
+  
+
+    #section_posts{
+        grid-template-columns:  1fr;
+        width:40rem;
+        margin: 0px;
+    
+
+    .Posts{
+        width: 100%;
+        height: 85%;
+        margin-left: .3rem;
+        
+    }
+}
+    
